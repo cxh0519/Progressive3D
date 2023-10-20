@@ -11,12 +11,11 @@
 [![Project page](https://img.shields.io/badge/Project-Page-brightgreen)](https://cxh0519.github.io/projects/Progressive3D/)
 
 <p align="center">
-  <img src="images/conception.png" height=600>
+  <img src="./images/conception.png" height=600>
 </p>
 
 <div align="center">
 <b>Conception.</b> Current text-to-3D methods suffer from challenges when given prompts describing multiple objects binding with different attributes. 
-
 Compared to (a) generating with existing methods, (b) generating with Progressive3D produces 3D content consistent with given prompts.
 </div>
 
