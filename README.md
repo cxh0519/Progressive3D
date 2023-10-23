@@ -21,7 +21,7 @@ Compared to (a) generating with existing methods, (b) generating with Progressiv
 
 ## News
 
-- [2023/10/20] Our code will open after the paper review. 
+- [2023/10/20] Our code will open after the paper has been reviewed. 
 
 ## Bibtex
 
