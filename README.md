@@ -16,7 +16,9 @@
 </h5>
 
 <p align="center">
-  <img src="assets/teaser.gif" width="75%">
+  <video id="replay-video" autoplay loop muted width="75%">
+    <source src="./assets/teaser.mp4" type="video/mp4">
+  </video>
 </p>
 
 ## 📋News
