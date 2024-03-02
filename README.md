@@ -48,6 +48,11 @@ python launch.py --config custom/threestudio-progressive3d/configs/mvdream-progr
 # Progressive3D can locally edit 3D content as a series of steps
 python launch.py --config custom/threestudio-progressive3d/configs/mvdream-progressive3d_2.yaml --train --gpu 0 system.prompt_processor.prompt="a medieval soldier with metal armor riding a terracotta wolf|a medieval soldier with metal armor riding a terracotta wolf and holding a golden axe" resume="your_path_to_the_ckpt_of_edited_3D_content"
 ```
+If everything go well, you can obtain following result:
+
+<p align="center">
+  <img src="assets/result.gif" width="75%">
+</p>
 
 ## 📢Tips
 **[Configs]** Each edit step needs 10000 steps for optimizing. 
