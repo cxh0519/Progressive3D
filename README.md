@@ -48,20 +48,26 @@ python launch.py --config custom/threestudio-progressive3d/configs/mvdream-progr
 # Progressive3D can locally edit 3D content as a series of steps
 python launch.py --config custom/threestudio-progressive3d/configs/mvdream-progressive3d_2.yaml --train --gpu 0 system.prompt_processor.prompt="a medieval soldier with metal armor riding a terracotta wolf|a medieval soldier with metal armor riding a terracotta wolf and holding a golden axe" resume="your_path_to_the_ckpt_of_edited_3D_content"
 ```
-If everything go well, you can obtain following result:
+If everything goes well, you can obtain following result:
 
 <p align="center">
   <img src="assets/result.gif" width="75%">
 </p>
 
-## 📢Tips
+## 🔔Tips
 **[Configs]** Each edit step needs 10000 steps for optimizing. 
 Therefore, ``max_steps`` needs to be modified in different editing processes.
 Moreover, many configs should be relative to the ``max_steps`` including ``resolution_milestones, ambient_only_steps, min/max_step_percent, lambda_consistency/init``, more details can be referred in provided configs.
 
 **[Prompt]** Expected input prompt format is A|B, where A is the source prompt and B is the target prompt.
 
-**[Region Defination]** The editable region is defined as ``box_info=[box center; box size]`` in configs.
+**[Region Defination]** The editable region is defined as ``box_info=[box center; box size]`` in configs. Noticing that editable regions can be defined as multiple boxes:
+```
+# Example for inputing multiple boxes as region defination 
+box_info: 
+  - [2.0, 0.5, 1.0, 0.0, 0.0, -0.6]
+  - [1.0, 0.4, 1.0, 0.0, -0.4, 0.2]
+```
 
 **[Axis]** The positive directions of the x,y,z-axis in Progressive3D are point out of screen, point to right and point to up, respectively.
 
