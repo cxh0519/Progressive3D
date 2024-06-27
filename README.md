@@ -61,7 +61,7 @@ Moreover, many configs should be relative to the ``max_steps`` including ``resol
 
 **[Prompt]** Expected input prompt format is A|B, where A is the source prompt and B is the target prompt.
 
-**[Region Defination]** The editable region is defined as ``box_info=[box center; box size]`` in configs. Noticing that editable regions can be defined as multiple boxes:
+**[Region Defination]** The editable region is defined as ``box_info=[box size; box center]`` in configs. Noticing that editable regions can be defined as multiple boxes:
 ```
 # Example for inputing multiple boxes as region defination 
 box_info: 
